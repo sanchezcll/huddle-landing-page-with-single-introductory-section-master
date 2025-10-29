@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 425px;
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    padding: 30px 30px ;
+    gap: 10px;
+}
+
+.logo{
+    width: 200px;
+    padding: 30px 30px 50px 0;
+
+}
+
+.screen__ilustration{
+    width: 100%;
+}
+
+.main__info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+.chip{
+    margin: 0 30px;
+    height: 50px;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%);
+    font-size: 14px;
+    border: 0;
+    margin-top: 15px;
+}
+
+.chip:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+@media ( min-width: 1024px){
+    body{
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+
+    }
+    .container{
+        max-width: 1200px;
+        flex-direction: row;
+        padding: 40px 40px;
+        gap: 30px;
+        background-image: none;
+        background-color:transparent ;
+    }
+    .main__info{
+        height: 600px;
+        justify-content: center;
+        text-align: start;
+    }
+
+    .title{
+        font-size: 33px;
+    }
+
+    .screen__ilustration{
+        width: 450px;
+        align-items: center;
+        justify-content: center;
+    }
+    .chip{
+        margin-top: 50px;
+        margin-left: 0;
+        width: 150px;
+    }
+}
